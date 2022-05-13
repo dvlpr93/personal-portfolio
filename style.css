@@ -1,0 +1,314 @@
+body {
+    background-color: #1b1a1c;
+    color: #f0f0f0;
+    font-family: sans-serif;
+    height: 150vh;
+    margin: 0;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Raleway";
+    font-size: 4rem;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #b02e31;
+    font-family: "Raleway";
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: "Raleway";
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-family: "Raleway";
+    font-size: 4rem;
+}
+
+hr {
+    width: 30vw;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+/* Navbar CSS */
+
+#navbar {
+    background-color: #be3144;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2.5vw;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px 0 20px;
+}
+
+#navbar a {
+    color: #f0f0f0;
+    font-family: "Poppins";
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Empty Container CSS */
+
+.empty-container {
+    height: 10vh;
+}
+
+/* Welcome Section CSS */
+
+#welcome-section {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Projects Section CSS */
+
+#projects {
+    background-color: #45567d;
+    padding: 100px 0 100px 0;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+}
+
+#projects-grid {
+    width: 75vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.project-tile p {
+    background-color: #303841;
+    color: #f0f0f0;
+    font-size: 1.3rem;
+    margin-top: -5px;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Contact CSS */
+
+#contact {
+    height: 90vh;
+}
+
+.contact-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    width: 50vw;
+    margin: auto;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.socials a {
+    margin: 25px;
+}
+
+.footer {
+    border-style: solid none none none;
+    border-color: #be3144;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Queries CSS */
+
+@media (max-width: 1700px) {
+    hr {
+        width: 35vw;
+    }
+}
+
+@media (max-width: 1600px) {
+    hr {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 1400px) {
+    hr {
+        width: 45vw;
+    }
+}
+
+@media (max-width: 1300px) {
+    hr {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    #projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h4 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    h3 {
+        font-size: 2.2rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    hr {
+        width: 55vw;
+    }
+
+    .project-tile p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    h3 {
+        font-size: 1.9rem;
+    }
+
+    .project-tile p {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    .socials {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    hr {
+        width: 60vw;
+    }
+
+    #projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-message {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 700px) {
+    hr {
+        width: 65vw;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    .contact-message {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 600px) {
+    hr {
+        width: 70vw;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-message {
+        width: 75vw;
+    }
+
+    .socials {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    hr {
+        width: 75vw;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-message {
+        width: 85vw;
+    }
+
+    h4 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+    }
+}
